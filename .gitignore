@@ -3,3 +3,6 @@ __pycache__/
 artifacts/
 reports/
 *.pyc
+
+**/data.py
+

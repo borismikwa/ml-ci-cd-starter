@@ -85,7 +85,8 @@ jobs:
         with:
           name: model
           path: artifacts
-
+      - name: Add src to PYTHONPATH
+        run: echo "PYTHONPATH=$PYTHONPATH:$(pwd)/src" >> $GITHUB_ENV
       - name: Evaluate (Gate)
         run: python src/evaluate.py --config configs/train_config.yml --model-path artifacts/model.joblib
 

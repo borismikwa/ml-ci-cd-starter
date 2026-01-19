@@ -1,0 +1,21 @@
+project:
+  name: "ml-ci-cd-starter"
+  problem_type: "regression"
+
+data:
+  seed: 42
+  n_samples: 5000
+  n_features: 25
+  noise: 0.75
+  test_size: 0.2
+
+model:
+  type: "ridge"
+  alpha: 1.0
+
+gates:
+  min_r2: 0.70
+
+outputs:
+  artifacts_dir: "artifacts"
+  reports_dir: "reports"

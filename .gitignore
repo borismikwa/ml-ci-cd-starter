@@ -4,5 +4,5 @@ artifacts/
 reports/
 *.pyc
 
-**/data.py
+
 
